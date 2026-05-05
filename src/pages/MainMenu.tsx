@@ -49,6 +49,8 @@ export default function MainMenu() {
       <div className="mc-footer">
         <span>gabrielgusn.dev v1.0.0</span>
         <span>DevSecOps Edition</span>
+        <span>NOT APPROVED BY OR ASSOCIATED WITH MOJANG.</span>
+        <span>Song by C418</span>
       </div>
     </div>
   )
