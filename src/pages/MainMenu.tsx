@@ -1,5 +1,4 @@
 import { useNavigate } from 'react-router-dom'
-import { useMemo } from 'react'
 import { playClick } from '../utils/playClick'
 
 const SPLASH_TEXTS = [
@@ -12,6 +11,8 @@ const SPLASH_TEXTS = [
   'CKA Certified (no cap)'
 ]
 
+const SPLASH = SPLASH_TEXTS[Math.floor(Math.random() * SPLASH_TEXTS.length)]
+
 const MENU_ITEMS = [
   { label: 'About Me',       path: '/about' },
   { label: 'Experience',     path: '/experience' },
@@ -21,10 +22,6 @@ const MENU_ITEMS = [
 
 export default function MainMenu() {
   const navigate = useNavigate()
-  const splash = useMemo(
-    () => SPLASH_TEXTS[Math.floor(Math.random() * SPLASH_TEXTS.length)],
-    []
-  )
 
   return (
     <div className="mc-screen">
@@ -33,7 +30,7 @@ export default function MainMenu() {
       <div className="mc-main-content">
         <div className="mc-title-container">
           <img src="/title.png" alt="Gabriel Gustavo Nicolodi" className="mc-title-img" />
-          <span className="mc-title-splash">{splash}</span>
+          <span className="mc-title-splash">{SPLASH}</span>
         </div>
 
         <div className="mc-button-group">

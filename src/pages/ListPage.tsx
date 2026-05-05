@@ -70,7 +70,7 @@ export default function ListPage({ title, entries }: Props) {
   const colorMap = useMemo(() => {
     const map = new Map<number, BlockColor>()
     entries.forEach(e => {
-      map.set(e.id, e.blockColor ?? ALL_BLOCK_COLORS[Math.floor(Math.random() * ALL_BLOCK_COLORS.length)])
+      map.set(e.id, e.blockColor ?? ALL_BLOCK_COLORS[(e.id * 7) % ALL_BLOCK_COLORS.length])
     })
     return map
   }, [entries])
@@ -103,7 +103,8 @@ export default function ListPage({ title, entries }: Props) {
     if (!overflows.has(id)) return
     setExpanded(prev => {
       const next = new Set(prev)
-      next.has(id) ? next.delete(id) : next.add(id)
+      if (next.has(id)) next.delete(id)
+      else next.add(id)
       return next
     })
   }

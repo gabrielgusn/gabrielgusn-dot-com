@@ -34,7 +34,6 @@ export default function AmbientMusic() {
     const audio = ref.current
     if (!audio) return
 
-    let timer: ReturnType<typeof setTimeout>
     let playing = false
 
     const tryPlay = () => {
@@ -57,7 +56,7 @@ export default function AmbientMusic() {
     audio.preload = 'auto'
     audio.volume = 0.7
     audio.load()
-    timer = setTimeout(tryPlay, 3000)
+    const timer = setTimeout(tryPlay, 3000)
 
     return () => {
       clearTimeout(timer)
