@@ -8,6 +8,7 @@ export type BlockColor =
 export interface ListEntry {
   id: number
   title: string
+  url?: string
   subtitle: string
   description: string
   blockColor: BlockColor
@@ -67,7 +68,20 @@ export default function ListPage({ title, entries }: Props) {
               <div className={`mc-block-icon mc-block-${entry.blockColor}`} />
 
               <div className="mc-server-info">
-                <div className="mc-server-name">{entry.title}</div>
+                {entry.url ? (
+                  <a href={entry.url} target="_blank">
+                    <div className="mc-server-name mc-server-name-url">
+                      {entry.title}
+                      <img 
+                        className="mc-server-name-new-tab" 
+                        src="new-tab.png"
+                      />
+                    </div>
+                    
+                  </a>
+                ) : (
+                  <div className="mc-server-name">{entry.title}</div>
+                )}
                 <div className="mc-server-sub">{entry.subtitle}</div>
                 <div className="mc-server-desc">{entry.description}</div>
                 {entry.tags && (

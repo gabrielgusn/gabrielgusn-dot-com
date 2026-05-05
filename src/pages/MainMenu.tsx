@@ -2,16 +2,13 @@ import { useNavigate } from 'react-router-dom'
 import { useMemo } from 'react'
 
 const SPLASH_TEXTS = [
-  'chmod 700 career',
-  'sudo apt-get hired',
-  'git push --force dreams',
-  '0 CVEs found!',
-  'ShiftLeft enjoyer!',
-  'OWASP Top 10? All known!',
-  'Least privilege IRL!',
-  'Immutable infra fan!',
-  'No secrets in git!',
-  'Shift security left!',
+  'extreme go horse certified',
+  'in my machine it works',
+  'git commit --amend --no-verify && git push -f',
+  'Senior IT rookie',
+  'we will fix this CVE in next release',
+  'DevSecSalesQASupportChaosFinMlOps',
+  'CKA Certified (no cap)'
 ]
 
 const MENU_ITEMS = [
@@ -52,7 +49,7 @@ export default function MainMenu() {
       </div>
 
       <div className="mc-footer">
-        <span>gabriel.dev v1.0.0</span>
+        <span>gabrielgusn.dev v1.0.0</span>
         <span>DevSecOps Edition</span>
       </div>
     </div>

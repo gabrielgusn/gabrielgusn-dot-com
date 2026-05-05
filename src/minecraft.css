@@ -187,7 +187,7 @@
   color: var(--mc-yellow);
   text-shadow: 2px 2px 0 var(--mc-yellow-dk);
   display: inline-block;
-  transform: rotate(18deg);
+  transform: rotate(-18deg);
   position: absolute;
   right: -8px;
   bottom: -4px;
@@ -196,8 +196,8 @@
 }
 
 @keyframes splash-pulse {
-  from { transform: rotate(18deg) scale(0.90); }
-  to   { transform: rotate(18deg) scale(1.10); }
+  from { transform: rotate(-18deg) scale(0.90); }
+  to   { transform: rotate(-18deg) scale(1.10); }
 }
 
 /* ============================================================
@@ -221,7 +221,7 @@
     #999 0%, #888 49%,
     #777 50%, #666 100%
   );
-  border: none;
+  border: 2px solid black;
   box-shadow:
     inset  2px  2px 0 rgba(255,255,255,0.45),
     inset -2px -2px 0 rgba(0,0,0,0.50),
@@ -503,6 +503,15 @@
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+}
+
+.mc-server-name-new-tab {
+  width: 8px;
+  margin-left: 2px;
+}
+
+.mc-server-name-url:hover {
+  text-decoration-line: underline;
 }
 
 .mc-server-sub {
