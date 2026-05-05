@@ -1,4 +1,5 @@
 import { useEffect, useRef, useState } from 'react'
+import { playClick } from '../utils/playClick'
 
 export default function AmbientMusic() {
   const ref = useRef<HTMLAudioElement>(null)
@@ -53,8 +54,6 @@ export default function AmbientMusic() {
       console.error('[audio] element error:', audio.error?.code, audio.error?.message)
     })
 
-    const ogg  = audio.canPlayType('audio/ogg; codecs=opus')
-    const opus = audio.canPlayType('audio/opus')
     audio.preload = 'auto'
     audio.volume = 0.7
     audio.load()
@@ -85,7 +84,7 @@ export default function AmbientMusic() {
           />
           <span className="mc-volume-pct">{volume}%</span>
         </div>
-        <button className="mc-mute-btn" onClick={toggleMute}>
+        <button className="mc-mute-btn" onClick={() => { playClick(); toggleMute() }}>
           <img src={isMuted ? '/muted2.png' : '/unmuted2.png'} alt={isMuted ? 'Unmute' : 'Mute'} />
         </button>
       </div>

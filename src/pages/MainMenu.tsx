@@ -1,5 +1,6 @@
 import { useNavigate } from 'react-router-dom'
 import { useMemo } from 'react'
+import { playClick } from '../utils/playClick'
 
 const SPLASH_TEXTS = [
   'extreme go horse certified',
@@ -40,7 +41,7 @@ export default function MainMenu() {
             <button
               key={item.path}
               className="mc-button"
-              onClick={() => navigate(item.path)}
+              onClick={() => { playClick(); navigate(item.path) }}
             >
               {item.label}
             </button>

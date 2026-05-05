@@ -1,5 +1,6 @@
 import { useState, useRef, useLayoutEffect, useMemo } from 'react'
 import { useNavigate } from 'react-router-dom'
+import { playClick } from '../utils/playClick'
 
 interface Balloon {
   id: number
@@ -138,7 +139,7 @@ export default function ListPage({ title, entries }: Props) {
               key={entry.id}
               className={`mc-server-entry${expanded.has(entry.id) ? ' expanded selected' : ''}${overflows.has(entry.id) ? ' has-overflow' : ''}`}
               style={{ cursor: overflows.has(entry.id) ? 'pointer' : 'default' }}
-              onClick={() => toggle(entry.id)}
+              onClick={() => { playClick(); toggle(entry.id) }}
               onMouseEnter={e => showBalloon(e, entry.id)}
               onMouseLeave={() => setBalloon(null)}
             >
@@ -179,7 +180,7 @@ export default function ListPage({ title, entries }: Props) {
         </div>
 
         <div className="mc-action-row">
-          <button className="mc-button mc-button-sm" onClick={() => navigate('/')}>
+          <button className="mc-button mc-button-sm" onClick={() => { playClick(); navigate('/') }}>
             Back to Menu
           </button>
         </div>
