@@ -18,7 +18,7 @@ const entries: ListEntry[] = [
     title: 'Technical Skills',
     subtitle: 'Arsenal & Tooling',
     description:
-      'Kubernetes · Docker · Terraform · AWS · GCP · Azure  · Oracle Cloud · Falco · Snyk · Trivy · ArgoCD · GitHub Actions · GitLab CI · Python · Go · Bash · OPA/Rego.',
+      'Kubernetes · Docker · Terraform · AWS · GCP · Azure  · Oracle Cloud · Falco · Snyk · Trivy · ArgoCD · GitHub Actions · GitLab CI · Python · Go · Rust · Bash · Open Policy Agent · Docker · Linux',
     blockColor: 'diamond',
     pingStrength: 5,
     pingLabel: 'Expert',
@@ -40,7 +40,7 @@ const entries: ListEntry[] = [
     title: 'Education',
     subtitle: 'B.Sc. Software Engineering  - Unicesumar - Dubai · 2026-2028',
     description:
-      'Solid foundation in computing and electronics, preparing engineers to innovatively design hardware, software, and embedded systems.',
+      '',
     blockColor: 'bookshelf',
     pingStrength: 3,
     pingLabel: 'Ongoing',

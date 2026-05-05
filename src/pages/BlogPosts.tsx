@@ -7,7 +7,7 @@ const entries: ListEntry[] = [
     title: 'Zero Trust Architecture in K8s',
     subtitle: 'May 2024 · Security',
     description:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Implementing zero-trust principles in Kubernetes using mTLS, network policies, and OPA Gatekeeper for policy enforcement.',
+      'STILL BEING WRITTEN',
     blockColor: 'redstone',
     pingStrength: 5,
     pingLabel: '8 min read',
@@ -18,7 +18,7 @@ const entries: ListEntry[] = [
     title: 'Shifting Security Left with GitOps',
     subtitle: 'March 2024 · DevSecOps',
     description:
-      'Ut enim ad minim veniam, quis nostrud exercitation. Integrating security scanning and policy-as-code directly into your GitOps pipeline with ArgoCD and Flux.',
+      'STILL BEING WRITTEN',
     blockColor: 'emerald',
     pingStrength: 5,
     pingLabel: '6 min read',
@@ -29,7 +29,7 @@ const entries: ListEntry[] = [
     title: 'Secrets Management at Scale',
     subtitle: 'January 2024 · Infrastructure',
     description:
-      'Duis aute irure dolor in reprehenderit in voluptate velit esse. Deep dive into HashiCorp Vault deployment patterns, dynamic secrets, and enterprise PKI infrastructure.',
+      'STILL BEING WRITTEN',
     blockColor: 'obsidian',
     pingStrength: 4,
     pingLabel: '10 min read',
@@ -40,7 +40,7 @@ const entries: ListEntry[] = [
     title: 'Container Security Best Practices',
     subtitle: 'November 2023 · Containers',
     description:
-      'Excepteur sint occaecat cupidatat non proident. Comprehensive guide from image scanning to runtime protection using Falco, Trivy, and OPA admission controllers.',
+      'STILL BEING WRITTEN',
     blockColor: 'diamond',
     pingStrength: 4,
     pingLabel: '7 min read',
