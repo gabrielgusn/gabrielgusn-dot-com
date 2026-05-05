@@ -30,17 +30,11 @@ export default function MainMenu() {
 
   return (
     <div className="mc-screen">
-      <div className="mc-panorama-bg">
-        <div className="mc-sun-glow" />
-      </div>
       <div className="mc-vignette" />
 
       <div className="mc-main-content">
         <div className="mc-title-container">
-          <div className="mc-title-main">
-            <span className="mc-title-line1">GABRIEL GUSTAVO</span>
-            <span className="mc-title-line2">NICOLODI</span>
-          </div>
+          <img src="/title.png" alt="Gabriel Gustavo Nicolodi" className="mc-title-img" />
           <span className="mc-title-splash">{splash}</span>
         </div>
 

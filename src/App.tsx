@@ -4,11 +4,13 @@ import AboutMe from './pages/AboutMe'
 import Experience from './pages/Experience'
 import Certifications from './pages/Certifications'
 import BlogPosts from './pages/BlogPosts'
+import VideoBackground from './components/VideoBackground'
 import './minecraft.css'
 
 export default function App() {
   return (
     <HashRouter>
+      <VideoBackground />
       <Routes>
         <Route path="/"               element={<MainMenu />} />
         <Route path="/about"          element={<AboutMe />} />
